@@ -39,4 +39,4 @@ jobs:
       - name: Install dependencies    
         run: npm install
       - name: Run audit
-        run: npm test-npm-security
+        run: npm run test-npm-security
