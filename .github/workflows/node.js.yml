@@ -23,7 +23,7 @@ jobs:
     - name: Run tests
       run: npm test
     - name: Run audit
-      run: npm audit
+      run: npm test
    
   test-integration:
     needs: build-test
@@ -39,4 +39,4 @@ jobs:
       - name: Install dependencies    
         run: npm install
       - name: Run audit
-        run: npm audit
+        run: npm test-npm-security
